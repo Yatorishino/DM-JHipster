@@ -1,0 +1,31 @@
+{
+  "name": "Course",
+  "fields": [],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "compte",
+      "otherEntityRelationshipName": "course",
+      "relationshipName": "compte",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "commande",
+      "otherEntityRelationshipName": "course",
+      "relationshipName": "commande",
+      "ownerSide": false
+    }
+  ],
+  "changelogDate": "20210410133246",
+  "entityTableName": "course",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

@@ -1,0 +1,26 @@
+{
+  "coopcycleApp": {
+    "commande": {
+      "home": {
+        "title": "Commandes",
+        "createLabel": "Създайте нов Commande",
+        "createOrEditLabel": "Създайте или редактирайте Commande",
+        "notFound": "Commandes не са намерени"
+      },
+      "created": "Създаден е нов Commande с идентификатор {{ param }}",
+      "updated": "Commande с идентификатор {{ param }} e oбновен",
+      "deleted": "Commande с идентификатор {{ param }} е изтрит",
+      "delete": {
+        "question": "Наистина ли искате да изтриете Commande {{ id }}?"
+      },
+      "detail": {
+        "title": "Commande"
+      },
+      "adresse": "Adresse",
+      "course": "Course",
+      "compte": "Compte",
+      "restaurant": "Restaurant",
+      "produit": "Produit"
+    }
+  }
+}

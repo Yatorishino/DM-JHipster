@@ -1,0 +1,75 @@
+entity Compte {
+	prenom String required minlength(2) maxlength(50),
+	nom String required minlength(2) maxlength(100),
+	adresse String required minlength(10) maxlength(200),
+	telephone String required minlength(10) maxlength(10) pattern(/^[0-9]{10}/)
+}
+
+entity Restaurant {
+	nom String required minlength(2) maxlength(100),
+	adresse String required minlength(10) maxlength(200)
+}
+
+entity TypeCommerce {
+	nom String required minlength(2) maxlength(100)
+}
+
+entity Produit {
+	nom String required minlength(2) maxlength(100),
+	prix Float required,
+	description String maxlength(1000)
+}
+
+entity Commande {
+	adresse String required minlength(10) maxlength(200)
+}
+
+entity Course {
+}
+
+entity Avis {
+	note Integer required,
+	description String maxlength(1000)
+}
+
+relationship ManyToMany {
+	Restaurant{TypeCommerce(nom)} to TypeCommerce{Restaurant}
+}
+
+relationship ManyToMany {
+	Commande{Produit} to Produit{Commande}
+}
+
+relationship ManyToOne {
+	Course{Compte} to Compte
+}
+
+relationship ManyToOne {
+	Commande{Compte} to Compte
+}
+
+relationship ManyToOne {
+	Restaurant{Compte} to Compte
+}
+
+relationship ManyToOne {
+	Commande{Restaurant} to Restaurant
+}
+
+relationship ManyToOne {
+	Produit{Restaurant} to Restaurant
+}
+
+relationship ManyToOne {
+	Avis{Course} to Course
+}
+
+relationship ManyToOne {
+	Compte{Course} to Course
+}
+
+relationship OneToOne {
+	Commande to Course
+}
+
+paginate Produit with pagination

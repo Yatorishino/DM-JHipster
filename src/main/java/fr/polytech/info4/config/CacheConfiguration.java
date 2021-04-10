@@ -48,6 +48,17 @@ public class CacheConfiguration {
             createCache(cm, fr.polytech.info4.domain.User.class.getName());
             createCache(cm, fr.polytech.info4.domain.Authority.class.getName());
             createCache(cm, fr.polytech.info4.domain.User.class.getName() + ".authorities");
+            createCache(cm, fr.polytech.info4.domain.Compte.class.getName());
+            createCache(cm, fr.polytech.info4.domain.Restaurant.class.getName());
+            createCache(cm, fr.polytech.info4.domain.Restaurant.class.getName() + ".typeCommerces");
+            createCache(cm, fr.polytech.info4.domain.TypeCommerce.class.getName());
+            createCache(cm, fr.polytech.info4.domain.TypeCommerce.class.getName() + ".restaurants");
+            createCache(cm, fr.polytech.info4.domain.Produit.class.getName());
+            createCache(cm, fr.polytech.info4.domain.Produit.class.getName() + ".commandes");
+            createCache(cm, fr.polytech.info4.domain.Commande.class.getName());
+            createCache(cm, fr.polytech.info4.domain.Commande.class.getName() + ".produits");
+            createCache(cm, fr.polytech.info4.domain.Course.class.getName());
+            createCache(cm, fr.polytech.info4.domain.Avis.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

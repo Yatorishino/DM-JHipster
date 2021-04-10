@@ -1,0 +1,23 @@
+{
+  "coopcycleApp": {
+    "typeCommerce": {
+      "home": {
+        "title": "Type Commerces",
+        "createLabel": "Создать новый Type Commerce",
+        "createOrEditLabel": "Создать или отредактировать Type Commerce",
+        "notFound": "No Type Commerces found"
+      },
+      "created": "Новый Type Commerce создан с идентификатором {{ param }}",
+      "updated": "Type Commerce обновлен с идентификатором {{ param }}",
+      "deleted": "Type Commerce удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Type Commerce {{ id }}?"
+      },
+      "detail": {
+        "title": "Type Commerce"
+      },
+      "nom": "Nom",
+      "restaurant": "Restaurant"
+    }
+  }
+}

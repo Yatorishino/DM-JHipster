@@ -1,0 +1,23 @@
+{
+  "coopcycleApp": {
+    "typeCommerce": {
+      "home": {
+        "title": "Type Commerces",
+        "createLabel": "Type Commerce အသစ်ထည့်မည်",
+        "createOrEditLabel": "Type Commerce အသစ်ထည့်ခြင်း (သို့) ပြုပြင်ခြင်း",
+        "notFound": "No Type Commerces found"
+      },
+      "created": "{{ param }} အိုင်ဒီဖြင့် Type Commerce အသစ်တစ်ခုအား ထည့်ပြီးပါပြီ။",
+      "updated": "{{ param }} အိုင်ဒီဖြင့် Type Commerce တစ်ခုအား ပြုပြင်ပြီးပါပြီ။",
+      "deleted": "{{ param }} အိုင်ဒီဖြင့် Type Commerce တစ်ခုအား ဖျက်ပြီးပါပြီ။",
+      "delete": {
+        "question": "Type Commerce {{ id }} အား ဖျက်ပါမည်။ သေချာပါသလား?"
+      },
+      "detail": {
+        "title": "Type Commerce"
+      },
+      "nom": "Nom",
+      "restaurant": "Restaurant"
+    }
+  }
+}

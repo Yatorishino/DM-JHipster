@@ -1,0 +1,48 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="compte">
+            <h2><span jhiTranslate="coopcycleApp.compte.detail.title">Compte</span> {{ compte.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="coopcycleApp.compte.prenom">Prenom</span></dt>
+                <dd>
+                    <span>{{ compte.prenom }}</span>
+                </dd>
+                <dt><span jhiTranslate="coopcycleApp.compte.nom">Nom</span></dt>
+                <dd>
+                    <span>{{ compte.nom }}</span>
+                </dd>
+                <dt><span jhiTranslate="coopcycleApp.compte.adresse">Adresse</span></dt>
+                <dd>
+                    <span>{{ compte.adresse }}</span>
+                </dd>
+                <dt><span jhiTranslate="coopcycleApp.compte.telephone">Telephone</span></dt>
+                <dd>
+                    <span>{{ compte.telephone }}</span>
+                </dd>
+                <dt><span jhiTranslate="coopcycleApp.compte.course">Course</span></dt>
+                <dd>
+                    <div *ngIf="compte.course">
+                        <a [routerLink]="['/course', compte.course?.id, 'view']">{{ compte.course?.id }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/compte', compte.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

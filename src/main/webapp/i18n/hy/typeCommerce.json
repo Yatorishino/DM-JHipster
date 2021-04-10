@@ -1,0 +1,23 @@
+{
+  "coopcycleApp": {
+    "typeCommerce": {
+      "home": {
+        "title": "Type Commerces",
+        "createLabel": "Ստեղծել նոր Type Commerce",
+        "createOrEditLabel": "Ստեղծել կամ փոփոխել Type Commerce",
+        "notFound": "No Type Commerces found"
+      },
+      "created": "Նոր Type Commerce ստեղծված է {{ param }} նունացուցիչով",
+      "updated": "Type Commerce թարմացվաց է {{ param }} նունացուցիչով",
+      "deleted": "Type Commerce հեռացված է {{ param }}  նունացուցիչով",
+      "delete": {
+        "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Type Commerce {{ id }}?"
+      },
+      "detail": {
+        "title": "Type Commerce"
+      },
+      "nom": "Nom",
+      "restaurant": "Restaurant"
+    }
+  }
+}

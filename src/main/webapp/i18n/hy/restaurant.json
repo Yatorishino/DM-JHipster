@@ -1,0 +1,25 @@
+{
+  "coopcycleApp": {
+    "restaurant": {
+      "home": {
+        "title": "Restaurants",
+        "createLabel": "Ստեղծել նոր Restaurant",
+        "createOrEditLabel": "Ստեղծել կամ փոփոխել Restaurant",
+        "notFound": "No Restaurants found"
+      },
+      "created": "Նոր Restaurant ստեղծված է {{ param }} նունացուցիչով",
+      "updated": "Restaurant թարմացվաց է {{ param }} նունացուցիչով",
+      "deleted": "Restaurant հեռացված է {{ param }}  նունացուցիչով",
+      "delete": {
+        "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Restaurant {{ id }}?"
+      },
+      "detail": {
+        "title": "Restaurant"
+      },
+      "nom": "Nom",
+      "adresse": "Adresse",
+      "compte": "Compte",
+      "typeCommerce": "Type Commerce"
+    }
+  }
+}

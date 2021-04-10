@@ -1,0 +1,73 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="coopcycleApp.compte.home.title">Comptes</span>
+
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-compte" [routerLink]="['/compte/new']">
+            <fa-icon icon="plus"></fa-icon>
+            <span  jhiTranslate="coopcycleApp.compte.home.createLabel">
+            Create a new Compte
+            </span>
+        </button>
+    </h2>
+
+    <jhi-alert-error></jhi-alert-error>
+
+    <jhi-alert></jhi-alert>
+
+    <div class="alert alert-warning" id="no-result" *ngIf="comptes?.length === 0">
+        <span jhiTranslate="coopcycleApp.compte.home.notFound">No comptes found</span>
+    </div>
+
+    <div class="table-responsive" id="entities" *ngIf="comptes && comptes.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+                <tr>
+                    <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
+                    <th scope="col" ><span jhiTranslate="coopcycleApp.compte.prenom">Prenom</span></th>
+                    <th scope="col" ><span jhiTranslate="coopcycleApp.compte.nom">Nom</span></th>
+                    <th scope="col" ><span jhiTranslate="coopcycleApp.compte.adresse">Adresse</span></th>
+                    <th scope="col" ><span jhiTranslate="coopcycleApp.compte.telephone">Telephone</span></th>
+                    <th scope="col" ><span jhiTranslate="coopcycleApp.compte.course">Course</span></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let compte of comptes ;trackBy: trackId">
+                    <td><a [routerLink]="['/compte', compte.id, 'view']">{{ compte.id }}</a></td>
+                    <td>{{ compte.prenom }}</td>
+                    <td>{{ compte.nom }}</td>
+                    <td>{{ compte.adresse }}</td>
+                    <td>{{ compte.telephone }}</td>
+                    <td>
+                        <div *ngIf="compte.course">
+                            <a [routerLink]="['/course', compte.course?.id, 'view']" >{{ compte.course?.id }}</a>
+                        </div>
+                    </td>
+                    <td class="text-right">
+                        <div class="btn-group">
+                            <button type="submit"
+                                    [routerLink]="['/compte', compte.id, 'view']"
+                                    class="btn btn-info btn-sm">
+                                <fa-icon icon="eye"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                            </button>
+
+                            <button type="submit"
+                                    [routerLink]="['/compte', compte.id, 'edit']"
+                                    class="btn btn-primary btn-sm">
+                                <fa-icon icon="pencil-alt"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                            </button>
+
+                            <button type="submit" (click)="delete(compte)"
+                                    class="btn btn-danger btn-sm">
+                                <fa-icon icon="times"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

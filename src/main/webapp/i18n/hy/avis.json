@@ -1,0 +1,24 @@
+{
+  "coopcycleApp": {
+    "avis": {
+      "home": {
+        "title": "Avis",
+        "createLabel": "Ստեղծել նոր Avis",
+        "createOrEditLabel": "Ստեղծել կամ փոփոխել Avis",
+        "notFound": "No Avis found"
+      },
+      "created": "Նոր Avis ստեղծված է {{ param }} նունացուցիչով",
+      "updated": "Avis թարմացվաց է {{ param }} նունացուցիչով",
+      "deleted": "Avis հեռացված է {{ param }}  նունացուցիչով",
+      "delete": {
+        "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Avis {{ id }}?"
+      },
+      "detail": {
+        "title": "Avis"
+      },
+      "note": "Note",
+      "description": "Description",
+      "course": "Course"
+    }
+  }
+}

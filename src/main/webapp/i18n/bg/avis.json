@@ -1,0 +1,24 @@
+{
+  "coopcycleApp": {
+    "avis": {
+      "home": {
+        "title": "Avis",
+        "createLabel": "Създайте нов Avis",
+        "createOrEditLabel": "Създайте или редактирайте Avis",
+        "notFound": "Avis не са намерени"
+      },
+      "created": "Създаден е нов Avis с идентификатор {{ param }}",
+      "updated": "Avis с идентификатор {{ param }} e oбновен",
+      "deleted": "Avis с идентификатор {{ param }} е изтрит",
+      "delete": {
+        "question": "Наистина ли искате да изтриете Avis {{ id }}?"
+      },
+      "detail": {
+        "title": "Avis"
+      },
+      "note": "Note",
+      "description": "Description",
+      "course": "Course"
+    }
+  }
+}

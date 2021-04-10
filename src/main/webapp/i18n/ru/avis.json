@@ -1,0 +1,24 @@
+{
+  "coopcycleApp": {
+    "avis": {
+      "home": {
+        "title": "Avis",
+        "createLabel": "Создать новый Avis",
+        "createOrEditLabel": "Создать или отредактировать Avis",
+        "notFound": "No Avis found"
+      },
+      "created": "Новый Avis создан с идентификатором {{ param }}",
+      "updated": "Avis обновлен с идентификатором {{ param }}",
+      "deleted": "Avis удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Avis {{ id }}?"
+      },
+      "detail": {
+        "title": "Avis"
+      },
+      "note": "Note",
+      "description": "Description",
+      "course": "Course"
+    }
+  }
+}

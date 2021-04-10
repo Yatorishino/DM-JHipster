@@ -7,6 +7,13 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Обекти",
+        "compte": "Compte",
+        "restaurant": "Restaurant",
+        "typeCommerce": "Type Commerce",
+        "produit": "Produit",
+        "commande": "Commande",
+        "course": "Course",
+        "avis": "Avis",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {
